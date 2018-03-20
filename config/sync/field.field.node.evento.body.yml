@@ -1,0 +1,22 @@
+uuid: 2293d035-06e5-4d34-b374-7b789593e6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.evento
+  module:
+    - text
+id: node.evento.body
+field_name: body
+entity_type: node
+bundle: evento
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
