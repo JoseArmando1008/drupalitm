@@ -5,8 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.evento.body
+    - field.field.node.evento.field_date
+    - field.field.node.evento.field_image
     - node.type.evento
   module:
+    - datetime
+    - image
     - text
     - user
 id: node.evento.teaser
@@ -17,12 +21,32 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
-      trim_length: 600
+      trim_length: 150
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_date:
+    type: datetime_default
+    weight: 1
     region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

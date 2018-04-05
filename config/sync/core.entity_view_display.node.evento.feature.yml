@@ -1,8 +1,9 @@
-uuid: e76191c8-68ab-4be4-9035-db3b40897eab
+uuid: ab5820af-5de3-498f-ad57-08d27832414d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.feature
     - field.field.node.evento.body
     - field.field.node.evento.field_date
     - field.field.node.evento.field_image
@@ -12,21 +13,21 @@ dependencies:
     - image
     - text
     - user
-id: node.evento.default
+id: node.evento.feature
 targetEntityType: node
 bundle: evento
-mode: default
+mode: feature
 content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_date:
-    weight: 0
-    label: inline
+    weight: 1
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -34,7 +35,7 @@ content:
     type: datetime_default
     region: content
   field_image:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: ''
@@ -43,7 +44,7 @@ content:
     type: image
     region: content
   links:
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
