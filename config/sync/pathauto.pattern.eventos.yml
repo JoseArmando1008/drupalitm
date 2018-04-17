@@ -1,0 +1,22 @@
+uuid: 72d10d5b-2d16-4747-a5c4-e23fab6b8a22
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: eventos
+label: Eventos
+type: 'canonical_entities:node'
+pattern: '/[node:field_date:date:html_year]/[node:field_date:date:html_month]/[node:title]'
+selection_criteria:
+  928855df-5e48-4e85-9744-f34612c8a889:
+    id: node_type
+    bundles:
+      evento: evento
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 928855df-5e48-4e85-9744-f34612c8a889
+selection_logic: and
+weight: 0
+relationships: {  }
