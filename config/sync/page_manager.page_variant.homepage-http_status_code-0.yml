@@ -1,0 +1,30 @@
+uuid: 5cdb12a3-7d03-4121-90d9-dff2818eadf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+  module:
+    - panels
+id: homepage-http_status_code-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  label: null
+  uuid: e9fc130a-e0ff-4222-9783-bf99611d9cf1
+  weight: 0
+  status_code: '404'
+  redirect_location: ''
+  layout: layout_twocol_bricks
+  layout_settings: {  }
+  page_title: Home
+  storage_type: page_manager
+  storage_id: homepage-http_status_code-0
+  builder: standard
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
