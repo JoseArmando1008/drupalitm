@@ -20,7 +20,7 @@ $form['account']['mail']['#weight']=-2;
 
 function drupal_itm_demos_theme() {
     return [
-        'items_accordion' => [
+        'item_accordion' => [
             'variables' =>[
                 'title' => '',
                 'description' => '',
