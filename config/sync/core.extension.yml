@@ -18,6 +18,7 @@ module:
   dblog: 0
   devel: 0
   devel_generate: 0
+  drupal_itm_demos: 0
   dynamic_page_cache: 0
   editor: 0
   entityqueue: 0
@@ -30,6 +31,7 @@ module:
   image: 0
   image_captcha: 0
   inline_entity_form: 0
+  kint: 0
   layout_discovery: 0
   link: 0
   menu_ui: 0

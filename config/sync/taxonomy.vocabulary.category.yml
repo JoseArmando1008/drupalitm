@@ -2,8 +2,8 @@ uuid: 8880a527-2dc2-4588-9325-588d5c28d8a5
 langcode: en
 status: true
 dependencies: {  }
-name: Category
+name: Drupal
 vid: category
-description: ''
+description: huehue
 hierarchy: 0
 weight: 0
