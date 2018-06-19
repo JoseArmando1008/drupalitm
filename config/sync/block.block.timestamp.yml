@@ -1,0 +1,20 @@
+uuid: 14cb8ddf-4de9-45c1-843f-22bfdd92b3d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - bartik
+id: timestamp
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: timestamp
+settings:
+  id: timestamp
+  label: Timestamp
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }

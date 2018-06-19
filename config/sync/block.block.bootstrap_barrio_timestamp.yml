@@ -1,0 +1,20 @@
+uuid: 938e85f7-3951-4ce5-a1a6-8c3e94d2a2d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_timestamp
+theme: bootstrap_barrio
+region: featured_top
+weight: 0
+provider: null
+plugin: timestamp
+settings:
+  id: timestamp
+  label: Timestamp
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }
