@@ -12,10 +12,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.article
   module:
-    - comment
     - image
-    - metatag
-    - path
     - text
 _core:
   default_config_hash: vPb_yvhA-xuNoV_yOmOwYxGuHNRIH1CoMK2qi7BSga0
@@ -33,15 +30,9 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 9
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -53,57 +44,24 @@ content:
     region: content
   field_image:
     type: image_image
-    weight: 1
+    weight: 0
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_metatag:
-    weight: 26
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 4
+    type: entity_reference_autocomplete
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 7
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 11
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 8
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -111,11 +69,17 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  comment: true
+  field_metatag: true
+  path: true
+  promote: true
+  status: true
+  sticky: true

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
     - node.type.article
     - system.menu.main
     - taxonomy.vocabulary.category
@@ -102,7 +101,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: default
       fields:
         title:
           id: title
